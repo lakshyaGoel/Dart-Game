@@ -1,42 +1,9 @@
-![horizontal line](media/image6.png){width="6.470197944006999in" height="0.11458333333333333in"} 
--------------------------------------------------------------------------------------------------
-
-[]{#_yj92fe4ugq0m .anchor}Game of Darts
-
-[]{#_2gazcsgmxkub
-.anchor}![](media/image5.jpg){width="4.140625546806649in"
-height="4.140625546806649in"}
-
-[]{#_2f82y5m5r3tx .anchor}
-
-[]{#_17dll2uzygss .anchor}
-
-[]{#_ygj1ej8yd1au .anchor}
-
-[]{#_tb8fawlfl1yr .anchor}
-
-[]{#_dkknowib3a7y .anchor}
-
-[]{#_irfj4tapv2yg .anchor}
-
-[]{#_eds30e591j4x .anchor}
-
-[]{#_5q9xdflon8iv .anchor}
-
-[]{#_1sgpxqrqktbq .anchor}
-
-[]{#_e9hjnk6rdaou .anchor}
-
-[]{#_atvu8ln8h1ru .anchor}
-
-[]{#_ng30guuqqp2v .anchor}10.20.2017
-
 **─\
-Project Proposal** by\
+Project ** by\
 Ayushi Srivastava \| Lakshya Goel\
 \
 **Course Details**\
-CSCI 5619 \| Virtual Reality \| Fall 2017
+CSCI 5619 \| Virtual Reality \| Fall 2017 \| UMN
 
 Overview
 ========
