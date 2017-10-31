@@ -1,5 +1,4 @@
-**─\
-Project ** by\
+Project by\
 Ayushi Srivastava \| Lakshya Goel\
 \
 **Course Details**\
@@ -25,14 +24,16 @@ Goals
 Technology Specifications
 =========================
 
-[Hand-Tracking]{.underline}
+Hand Tracking
 ---------------------------
 
 **Hardware** **:** Leap Motion\
-**Software :** C\# / Python to transfer Leap Motion 'Frames' containing
-data to Unity
+**Software :** C\# / Python to transfer Leap Motion 'Frames' containing data to Unity
 
-[ Dart Movement and Dartboard simulation  ]{.underline}**Hardware :** This simulation shall be realised with a Head-Mounted VR device such as HTC Vive, Oculus Rift[ ]{.underline}**Software :** Unity, which simulates the dart, board, and based on the values received from Vive Controllers, will make the darts move.
+Dart Movement and Dartboard simulation
+---------------------------
+**Hardware :** This simulation shall be realised with a Head-Mounted VR device tested on HTC Vive
+**Software :** Unity, which simulates the dart, board, and based on the values received from Vive Controllers, will make the darts move.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Milestones
