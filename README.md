@@ -1,6 +1,7 @@
-Project by\
-Ayushi Srivastava \| Lakshya Goel\
-\
+Project by
+===========
+Ayushi Srivastava \| Lakshya Goel
+----------------------------------
 **Course Details**\
 CSCI 5619 \| Virtual Reality \| Fall 2017 \| UMN
 
@@ -32,9 +33,8 @@ Hand Tracking
 
 Dart Movement and Dartboard simulation
 ---------------------------
-**Hardware :** This simulation shall be realised with a Head-Mounted VR device tested on HTC Vive
+**Hardware :** This simulation shall be realised with a Head-Mounted VR device tested on HTC Vive.\
 **Software :** Unity, which simulates the dart, board, and based on the values received from Vive Controllers, will make the darts move.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Milestones
 ==========
