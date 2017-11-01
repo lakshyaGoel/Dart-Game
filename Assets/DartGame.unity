@@ -290,6 +290,7 @@ GameObject:
   - component: {fileID: 559272696}
   - component: {fileID: 559272695}
   - component: {fileID: 559272694}
+  - component: {fileID: 559272699}
   m_Layer: 0
   m_Name: Dart
   m_TagString: Untagged
@@ -379,6 +380,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 87.595, y: -294.729, z: -204.20499}
+--- !u!114 &559272699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559272693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36d6be08a77d4fb8a66749d7fa6bdc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!1 &1462303361
 GameObject:
   m_ObjectHideFlags: 0
