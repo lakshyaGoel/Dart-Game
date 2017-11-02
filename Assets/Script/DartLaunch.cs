@@ -21,14 +21,11 @@ public class DartLaunch : MonoBehaviour {
 
 	void FixedUpdate(){
 
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
+		direction = this.transform;
 
-
-		//Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-
-		if (this.direction != null) {
-			rb.AddForce (direction.rotation * strength, ForceMode.Impulse);
+		if(Input.GetKeyDown(KeyCode.Space)){
+			Vector3 movement = new Vector3 (-1.0f, 0.0f, 0.0f);
+			rb.AddForce(movement * strength, ForceMode.Impulse);
 		}
 	}
 }
