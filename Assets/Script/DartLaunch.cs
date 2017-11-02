@@ -5,9 +5,7 @@ using UnityEngine;
 public class DartLaunch : MonoBehaviour {
 
 	private Rigidbody rb;
-	public float speed;
-	public float strength = 1;
-	public Transform direction = null;
+	public float strength = 1000000;
 
 	// Use this for initialization
 	void Start(){
@@ -20,12 +18,12 @@ public class DartLaunch : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-
-		direction = this.transform;
+		Vector3 movement = new Vector3 (-1.0f, 0.0f, 0.0f);
 
 		if(Input.GetKeyDown(KeyCode.Space)){
-			Vector3 movement = new Vector3 (-1.0f, 0.0f, 0.0f);
+			
 			rb.AddForce(movement * strength, ForceMode.Impulse);
+			rb.useGravity = true;
 		}
 	}
 }
