@@ -203,7 +203,6 @@ GameObject:
   - component: {fileID: 354383708}
   - component: {fileID: 354383707}
   - component: {fileID: 354383706}
-  - component: {fileID: 354383710}
   m_Layer: 0
   m_Name: Left Wall
   m_TagString: Untagged
@@ -277,21 +276,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -1.8030001, z: 0}
---- !u!54 &354383710
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354383705}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &359448953
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +612,6 @@ GameObject:
   - component: {fileID: 1625639738}
   - component: {fileID: 1625639737}
   - component: {fileID: 1625639736}
-  - component: {fileID: 1625639735}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -636,21 +619,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1625639735
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625639734}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!23 &1625639736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -728,7 +696,6 @@ GameObject:
   - component: {fileID: 1934606670}
   - component: {fileID: 1934606669}
   - component: {fileID: 1934606668}
-  - component: {fileID: 1934606672}
   m_Layer: 0
   m_Name: Back Wall
   m_TagString: Untagged
@@ -802,21 +769,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -182.506, z: 0}
---- !u!54 &1934606672
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1934606667}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2147185941
 GameObject:
   m_ObjectHideFlags: 0
