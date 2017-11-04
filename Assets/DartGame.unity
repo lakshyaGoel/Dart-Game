@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 354383706}
   m_Layer: 0
   m_Name: Left Wall
-  m_TagString: Untagged
+  m_TagString: Dart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,7 +458,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 559272693}
   m_LocalRotation: {x: 0.50280297, y: -0.48827294, z: 0.51607126, w: 0.4923914}
-  m_LocalPosition: {x: 2.62, y: 4.09, z: -0.2}
+  m_LocalPosition: {x: 2.62, y: 4.09, z: -0.18}
   m_LocalScale: {x: 0.2, y: 0.5101326, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -475,7 +475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36d6be08a77d4fb8a66749d7fa6bdc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 1
 --- !u!1 &1462303361
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +490,7 @@ GameObject:
   - component: {fileID: 1462303362}
   m_Layer: 0
   m_Name: Datboard
-  m_TagString: Untagged
+  m_TagString: Dartboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

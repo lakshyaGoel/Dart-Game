@@ -29,10 +29,11 @@ public class DartLaunch : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		if (collision.collider.tag == "dartboard") {
+		Debug.Log (collision.collider.tag);
+		if (collision.collider.tag == "Dartboard") {
 			rb.velocity = Vector3.zero;
 			rb.angularVelocity = Vector3.zero;
-			//rb.useGravity = false;
+			rb.useGravity = false;
 			rb.isKinematic = true;
 		}
 
