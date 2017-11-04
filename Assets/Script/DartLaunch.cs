@@ -32,7 +32,8 @@ public class DartLaunch : MonoBehaviour {
 		if (collision.collider.tag == "dartboard") {
 			rb.velocity = Vector3.zero;
 			rb.angularVelocity = Vector3.zero;
-			rb.useGravity = false;
+			//rb.useGravity = false;
+			rb.isKinematic = true;
 		}
 
 	}
