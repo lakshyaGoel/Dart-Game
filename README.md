@@ -1,6 +1,6 @@
 Project by
 ===========
-Ayushi Srivastava \| Lakshya Goel
+Ayushi Srivastava \| Lakshya Goel \| Mahendra Maiti
 ----------------------------------
 **Course Details**\
 CSCI 5619 \| Virtual Reality \| Fall 2017 \| UMN
