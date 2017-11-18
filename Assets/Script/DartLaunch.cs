@@ -3,52 +3,61 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DartLaunch : MonoBehaviour {
-
-	private Rigidbody rb;
 	public GameObject controllerRight;
-
+	public GameObject projectile;
+	public Transform firepoint;
+	public float power;
+	Rigidbody rb;
 	private SteamVR_Controller.Device device;
-	private SteamVR_TrackedController controller;
 	private SteamVR_TrackedObject trackedObj;
 
+	public float forceScaleFactor = 100f;
 
-	// Use this for initialization
-	void Start(){
-		rb = GetComponent<Rigidbody> ();
-		controller = controller.GetComponent<SteamVR_TrackedController> ();
-		controller.TriggerClicked += TriggerPressed;
+	private Vector3 initPos;
+	private float initTime;
+
+	void Start()
+	{
 		trackedObj = controllerRight.GetComponent<SteamVR_TrackedObject> ();
+		device = SteamVR_Controller.Input ((int)trackedObj.index);
 	}
 
-	private void TriggerPressed(object sender, ClickedEventArgs e){
-		ThrowDart ();
-	}
-	// Update is called once per frame
-	void Update () {
-		
+	void Update() 
+	{
+		if (device.GetHairTriggerDown ()) {
+			/*this.initPos = this.trackedObj.transform.position;
+			this.initTime = Time.time;
+
+		} else if (device.GetHairTriggerUp ()) {
+			Vector3 posDiff = this.trackedObj.transform.position - this.initPos;
+			float timeDiff = Time.time - this.initTime;*/
+			this.ThrowDart ();
+		}
 	}
 
 	void ThrowDart(){
-		//Vector3 movement = new Vector3 (-1.0f, 0.0f, 0.0f);
+		GameObject proj = Instantiate (this.projectile);
+		proj.transform.position = firepoint.position;
+		proj.transform.rotation = firepoint.rotation;
+		proj.transform.localScale = new Vector3 (0.05f, 0.05f, 0.05f);
+		proj.SetActive (true);
 
-		//if(Input.GetKeyDown(KeyCode.Space)){
-			rb.velocity = new Vector3(-20, 0, 0);
-			rb.useGravity = true;
-		//}
+		rb = proj.GetComponent<Rigidbody> ();
+		rb.AddForce (firepoint.up * this.forceScaleFactor);
 	}
 
-	void FixedUpdate(){
-		
-	}
 
 	void OnCollisionEnter(Collision collision) {
 		Debug.Log (collision.collider.tag);
-		if (collision.collider.tag == "Dartboard") {
+		Debug.Log (collision.gameObject.tag);
+
+		/*if (collision.collider.tag == "Dartboard") {
 			rb.velocity = Vector3.zero;
 			rb.angularVelocity = Vector3.zero;
 			rb.useGravity = false;
 			rb.isKinematic = true;
-		}
-
+			Debug.Log ("Hit");
+		}*/
 	}
+	
 }
