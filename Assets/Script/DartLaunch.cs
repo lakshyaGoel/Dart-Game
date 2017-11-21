@@ -45,19 +45,4 @@ public class DartLaunch : MonoBehaviour {
 		rb = proj.GetComponent<Rigidbody> ();
 		rb.AddForce (firepoint.up * this.forceScaleFactor);
 	}
-
-
-	void OnCollisionEnter(Collision collision) {
-		Debug.Log (collision.collider.tag);
-		Debug.Log (collision.gameObject.tag);
-
-		/*if (collision.collider.tag == "Dartboard") {
-			rb.velocity = Vector3.zero;
-			rb.angularVelocity = Vector3.zero;
-			rb.useGravity = false;
-			rb.isKinematic = true;
-			Debug.Log ("Hit");
-		}*/
-	}
-	
 }
