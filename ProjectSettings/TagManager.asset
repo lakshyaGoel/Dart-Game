@@ -6,6 +6,27 @@ TagManager:
   tags:
   - Dart
   - Dartboard
+  - 16Point
+  - 15Point
+  - 14Point
+  - 13Point
+  - 12Point
+  - 11Point
+  - 10Point
+  - 9Point
+  - 8Point
+  - 7Point
+  - 6Point
+  - 5Point
+  - 4Point
+  - 3Point
+  - 2Point
+  - 1Point
+  - 17Point
+  - 18Point
+  - 19Point
+  - 20Point
+  - BullsEye
   layers:
   - Default
   - TransparentFX
