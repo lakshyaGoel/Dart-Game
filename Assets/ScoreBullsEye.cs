@@ -20,6 +20,12 @@ public class ScoreBullsEye : MonoBehaviour {
 			Scoring.score_count += 100;
 			Debug.Log ("Hit Bulls Eye");
 			Debug.Log (Scoring.score_count);
+
+			Rigidbody rb = collision.rigidbody;
+			rb.velocity = Vector3.zero;
+			rb.angularVelocity = Vector3.zero;
+			rb.useGravity = false;
+			rb.isKinematic = true;
 		}
 
 	}

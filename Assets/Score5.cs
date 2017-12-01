@@ -27,6 +27,7 @@ public class Score5 : MonoBehaviour {
 			rb.angularVelocity = Vector3.zero;
 			rb.useGravity = false;
 			rb.isKinematic = true;
+
 		}
 
 	}

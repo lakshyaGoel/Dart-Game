@@ -20,6 +20,12 @@ public class Score13 : MonoBehaviour {
 			Scoring.score_count += 13;
 			Debug.Log ("Hit 13");
 			Debug.Log (Scoring.score_count);
+
+			Rigidbody rb = collision.rigidbody;
+			rb.velocity = Vector3.zero;
+			rb.angularVelocity = Vector3.zero;
+			rb.useGravity = false;
+			rb.isKinematic = true;
 		}
 
 	}
