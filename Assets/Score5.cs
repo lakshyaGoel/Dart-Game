@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Dartboard : MonoBehaviour {
+public class Score5 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,14 +14,20 @@ public class Dartboard : MonoBehaviour {
 	void Update () {
 		
 	}
+
 	void OnCollisionEnter(Collision collision) {
 		if (collision.collider.tag == "Dart") {
+
+			Scoring.score_count += 5;
+			Debug.Log ("Hit 5");
+			Debug.Log (Scoring.score_count);
+
 			Rigidbody rb = collision.rigidbody;
 			rb.velocity = Vector3.zero;
 			rb.angularVelocity = Vector3.zero;
 			rb.useGravity = false;
 			rb.isKinematic = true;
-			//Debug.Log ("Hit");
 		}
+
 	}
 }
