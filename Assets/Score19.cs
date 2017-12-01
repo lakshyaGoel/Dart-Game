@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
+using UnityEngine.UI;
 
 public class Score19 : MonoBehaviour {
-
+	public Text Score19text;
 	// Use this for initialization
 	void Start () {
 		
@@ -26,6 +26,8 @@ public class Score19 : MonoBehaviour {
 			rb.angularVelocity = Vector3.zero;
 			rb.useGravity = false;
 			rb.isKinematic = true;
+
+			Score19text.text = "Score: " + Scoring.score_count.ToString();
 		}
 
 	}

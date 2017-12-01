@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreBullsEye : MonoBehaviour {
 
+	public Text ScoreBEtext;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,6 +28,8 @@ public class ScoreBullsEye : MonoBehaviour {
 			rb.angularVelocity = Vector3.zero;
 			rb.useGravity = false;
 			rb.isKinematic = true;
+
+			ScoreBEtext.text = "Score: " + Scoring.score_count.ToString();
 		}
 
 	}

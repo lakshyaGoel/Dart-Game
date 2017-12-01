@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Score11 : MonoBehaviour {
 
+	public Text Score11text;
 	// Use this for initialization
 	void Start () {
 		
@@ -26,6 +27,8 @@ public class Score11 : MonoBehaviour {
 			rb.angularVelocity = Vector3.zero;
 			rb.useGravity = false;
 			rb.isKinematic = true;
+
+			Score11text.text = "Score: " + Scoring.score_count.ToString();
 		}
 
 	}
